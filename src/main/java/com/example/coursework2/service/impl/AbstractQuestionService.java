@@ -15,7 +15,7 @@ public class AbstractQuestionService implements QuestionService {
     public final QuestionRepository questionRepository;
     private final Random random = new Random();
 
-    public AbstractQuestionService(QuestionRepository questionRepository) {
+    public AbstractQuestionService(@Qualifier QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
 

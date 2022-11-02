@@ -2,9 +2,10 @@ package com.example.coursework2.service;
 
 import com.example.coursework2.exception.IncorrectAmountOfQuestions;
 import com.example.coursework2.model.Question;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
-
+@Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService javaQuestionService;
     private final QuestionService mathQuestionService;
